@@ -1,0 +1,154 @@
+/***************************************************
+COLORS
+***************************************************/
+
+$Background: #F8F4EE;
+$Main: #C06B69;
+$Black: #444444;
+$White: #F7F7F7;
+$Grey: lighten($Black, 50%);
+
+/***************************************************
+BODY HTML
+***************************************************/
+
+body {
+  background-color: $Background;
+  color: $Black;
+}
+
+/***************************************************
+CUSTOM
+***************************************************/
+
+a {
+  color: $Main;
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto 64px auto;
+  min-height: 100vh;
+}
+
+.container {
+
+}
+
+.hidden {
+  display: none;
+}
+
+hr {
+  border-top: 1px solid $Grey;
+}
+
+hr.hr-fancy {
+  border-top: 32px solid $Main;
+  width: 504px;
+  border-radius: 5px;
+}
+
+/***************************************************
+NAVBAR
+***************************************************/
+
+.navbar {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-around;
+  i {
+    cursor: pointer;
+    color: $Main;
+    margin: auto;
+    font-size: 3em;
+  }
+  i:hover {
+    color: lighten($Main, 5%);
+  }
+  * {
+    flex: 1;
+  }
+  .hamburger-container {
+    position: relative;
+    text-align: right;
+    .navbar-menu {
+      background: $Main;
+      text-align: left;
+      position: absolute;
+      top: 48px;
+      right: 14px;
+      padding: 0 32px 32px 32px;
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li {
+          border-bottom: 1px solid $Grey;
+          font-size: 1.2em;
+          padding-top: 32px;
+          flex: 1;
+          margin: auto 0;
+        }
+        a {
+          color: $White;
+        }
+        a:hover {
+          color: #FFF;
+        }
+      }
+    }
+  }
+  .home-link-container {
+    display: inline-block;
+    .home-link {
+      display: flex;
+    }
+  }
+}
+
+/***************************************************
+LANDING
+***************************************************/
+
+.landing-container {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  * {
+    margin: 0 auto;
+  }
+  .info-bar {
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: $White;
+    margin-top: -16px;
+    text-align: center;
+    padding: 16px 32px;
+    background: $Main;
+    width: 540px;
+  }
+  .personal-info {
+    margin: 64px auto;
+    max-width: 504px;
+    h1 {
+      font-size: 3em;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 1.2em;
+    }
+  }
+}
+
+#personal-image {
+  height: 400px;
+  width: 400px;
+  background-image: url(asset_path('default'));
+  background-size: contain;
+}
