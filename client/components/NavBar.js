@@ -28,9 +28,24 @@ class NavBar extends React.Component {
     let menu =
       <div className='navbar-menu hidden'>
         <ul>
-          <li><a href='/about'>About</a></li>
-          <li><a href='/resume'>Resume</a></li>
-          <li><a href='/projects'>Projects</a></li>
+          <li>
+            <a href='/projects'>
+              <i className='fa fa-lightbulb-o'>&nbsp;</i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href='/about'>
+              <i className='fa fa-id-card-o'>&nbsp;</i>
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a href='/resume'>
+              <i className='fa fa-file-text-o'>&nbsp;</i>
+              <span>Resume</span>
+            </a>
+          </li>
         </ul>
       </div>;
 

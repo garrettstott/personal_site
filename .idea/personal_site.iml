@@ -129,6 +129,16 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="awesome_print (vbundled(1.8.0)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/gems/gems/awesome_print-1.8.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/gems/gems/awesome_print-1.8.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="bcrypt (vbundled(3.1.11)) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/gems/gems/bcrypt-3.1.11/ext" />
@@ -503,6 +513,18 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="pg (vbundled(0.21.0)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/gems/gems/pg-0.21.0/ext" />
+          <root url="file://$MODULE_DIR$/gems/gems/pg-0.21.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/gems/gems/pg-0.21.0/ext" />
+          <root url="file://$MODULE_DIR$/gems/gems/pg-0.21.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="pry (vbundled(0.11.3)) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/gems/gems/pry-0.11.3/bin" />
@@ -781,22 +803,6 @@
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/gems/gems/sprockets-rails-3.2.1/lib" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="sqlite3 (vbundled(1.3.13)) [path][gem]">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/gems/gems/sqlite3-1.3.13/ext" />
-          <root url="file://$MODULE_DIR$/gems/gems/sqlite3-1.3.13/faq" />
-          <root url="file://$MODULE_DIR$/gems/gems/sqlite3-1.3.13/lib" />
-          <root url="file://$MODULE_DIR$/gems/gems/sqlite3-1.3.13/tasks" />
-        </CLASSES>
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/gems/gems/sqlite3-1.3.13/ext" />
-          <root url="file://$MODULE_DIR$/gems/gems/sqlite3-1.3.13/faq" />
-          <root url="file://$MODULE_DIR$/gems/gems/sqlite3-1.3.13/lib" />
-          <root url="file://$MODULE_DIR$/gems/gems/sqlite3-1.3.13/tasks" />
         </SOURCES>
       </library>
     </orderEntry>

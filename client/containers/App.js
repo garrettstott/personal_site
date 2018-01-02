@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 const App = ({ children }) => (
   <div>
@@ -7,6 +8,7 @@ const App = ({ children }) => (
       <NavBar />
       { children }
     </div>
+    <Footer />
   </div>
 );
 

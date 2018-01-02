@@ -15,6 +15,7 @@ BODY HTML
 body {
   background-color: $Background;
   color: $Black;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /***************************************************
@@ -26,8 +27,12 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: lighten($Main, 5%);
+}
+
 .wrapper {
-  max-width: 1100px;
+  max-width: 700px;
   margin: 0 auto 64px auto;
   min-height: 100vh;
 }
@@ -40,6 +45,10 @@ a {
   display: none;
 }
 
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
 hr {
   border-top: 1px solid $Grey;
 }
@@ -48,6 +57,7 @@ hr.hr-fancy {
   border-top: 32px solid $Main;
   width: 504px;
   border-radius: 5px;
+  margin: 32px auto;
 }
 
 /***************************************************
@@ -55,9 +65,9 @@ NAVBAR
 ***************************************************/
 
 .navbar {
-  margin: 0 auto;
+  margin: 0 auto 64px auto;
   max-width: 700px;
-  padding: 16px;
+  padding: 16px 0;
   display: flex;
   justify-content: space-around;
   i {
@@ -92,12 +102,19 @@ NAVBAR
           padding-top: 32px;
           flex: 1;
           margin: auto 0;
-        }
-        a {
-          color: $White;
-        }
-        a:hover {
-          color: #FFF;
+          a {
+            color: $White;
+            i {
+              font-size: 1em;
+              color: $White;
+            }
+            span {
+              text-align: right;
+            }
+          }
+          a:hover {
+            color: #FFF;
+          }
         }
       }
     }
@@ -115,7 +132,6 @@ LANDING
 ***************************************************/
 
 .landing-container {
-  margin-top: 64px;
   display: flex;
   flex-direction: column;
   * {
@@ -131,10 +147,9 @@ LANDING
     padding: 16px 32px;
     background: $Main;
     width: 540px;
+    margin-bottom: 32px;
   }
   .personal-info {
-    margin: 64px auto;
-    max-width: 504px;
     h1 {
       font-size: 3em;
       text-align: center;
@@ -151,4 +166,67 @@ LANDING
   width: 400px;
   background-image: url(asset_path('default'));
   background-size: contain;
+}
+
+.landing-section-container {
+  margin: 0 auto;
+  max-width: 504px;
+  min-width: 504px;
+  h1 {
+    margin-bottom: 32px;
+  }
+}
+
+.recent-projects-container {
+  p {
+    margin-top: 8px;
+  }
+  .recent-project-image {
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    border: 1px solid $Grey;
+    margin: 0;
+  }
+  .recent-project-container {
+    border-bottom: 1px solid $Grey;
+    margin-top: 32px;
+    h2 {
+      margin: 8px 0;
+    }
+    i {
+      font-size: 2em;
+    }
+    .links-container {
+      margin: 16px 0;
+    }
+  }
+}
+
+.about-preview-container {
+  h1 {
+    margin-bottom: 32px;
+  }
+}
+
+/***************************************************
+FOOTER
+***************************************************/
+
+.footer {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  * {
+    margin: auto 0;
+  }
+  i {
+    padding-left: 8px;
+    color: $Black
+  }
+  i:hover {
+    color: $Main;
+  }
 }
