@@ -1,3 +1,266 @@
+/***************************************************
+IMPORT
+***************************************************/
 @import 'normalize';
 @import 'font-awesome';
-@import 'app';
+
+/***************************************************
+COLORS
+***************************************************/
+
+$Background: #F8F4EE;
+$Main: #C06B69;
+$Black: #444444;
+$White: #F7F7F7;
+$Grey: lighten($Black, 50%);
+
+/***************************************************
+BODY HTML
+***************************************************/
+
+body {
+  background-color: $Background;
+  color: $Black;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/***************************************************
+CUSTOM
+***************************************************/
+
+a {
+  color: $Black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $Main;
+}
+
+.wrapper {
+  max-width: 700px;
+  margin: 0 auto 64px auto;
+  min-height: 100vh;
+}
+
+.container {
+
+}
+
+.hidden {
+  display: none;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
+hr {
+  border-top: 1px solid $Grey;
+}
+
+hr.hr-fancy {
+  border-top: 32px solid $Main;
+  width: 504px;
+  border-radius: 5px;
+  margin: 32px auto;
+}
+
+/***************************************************
+NAVBAR
+***************************************************/
+
+.navbar {
+  margin: 0 auto 64px auto;
+  max-width: 700px;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-around;
+  i {
+    cursor: pointer;
+    color: $Main;
+    margin: auto;
+    font-size: 3em;
+  }
+  i:hover {
+    color: lighten($Main, 5%);
+  }
+  * {
+    flex: 1;
+  }
+  .hamburger-container {
+    position: relative;
+    text-align: right;
+    .navbar-menu {
+      background: $Main;
+      text-align: left;
+      position: absolute;
+      top: 48px;
+      right: 14px;
+      padding: 0 32px 32px 32px;
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li {
+          border-bottom: 1px solid $Grey;
+          font-size: 1.2em;
+          padding-top: 32px;
+          flex: 1;
+          margin: auto 0;
+          a {
+            color: $White;
+            i {
+              font-size: 1em;
+              color: $White;
+            }
+            span {
+              text-align: right;
+            }
+          }
+          a:hover {
+            color: #FFF;
+          }
+        }
+      }
+    }
+  }
+  .home-link-container {
+    display: inline-block;
+    .home-link {
+      display: flex;
+    }
+  }
+}
+
+/***************************************************
+LANDING
+***************************************************/
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  * {
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  .info-bar {
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: $White;
+    margin-top: -16px;
+    text-align: center;
+    padding: 16px 32px;
+    background: $Main;
+    width: 540px;
+    margin-bottom: 32px;
+  }
+  .personal-info {
+    h1 {
+      font-size: 4em;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 1.2em;
+    }
+  }
+}
+
+#personal-image {
+  height: 400px;
+  width: 400px;
+  background-image: url(asset_path('default'));
+  background-size: contain;
+}
+
+.landing-section-container {
+  margin: 0 auto;
+  max-width: 504px;
+  min-width: 504px;
+  h1 {
+    margin-bottom: 32px;
+  }
+}
+
+.recent-projects-container {
+  p {
+    margin-top: 8px;
+  }
+  .recent-project-image {
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    border: 1px solid $Grey;
+    margin: 0;
+  }
+  .recent-project-container {
+    border-bottom: 1px solid $Grey;
+    margin-top: 32px;
+    h2 {
+      margin: 8px 0;
+    }
+    i {
+      font-size: 2em;
+    }
+    .links-container {
+      margin: 16px 0;
+    }
+  }
+}
+
+.about-preview-container {
+  h1 {
+    margin-bottom: 32px;
+  }
+}
+
+/***************************************************
+FOOTER
+***************************************************/
+
+.footer {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  * {
+    margin: auto 0;
+  }
+  i {
+    padding-left: 8px;
+  }
+  i:hover {
+    color: $Main;
+  }
+}
+
+/***************************************************
+DEVISE
+***************************************************/
+
+.devise-container {
+  width: 500px;
+  margin: 0 auto;
+  input {
+    width: 100%;
+    background: none;
+    outline: none;
+    border: 1px solid $Main;
+    margin: 8px 0;
+    height: 24px;
+    line-height: 24px;
+  }
+}
+
+/***************************************************
+NO MATCH
+***************************************************/
+
+.no-match-container {
+  text-align: center;
+}
