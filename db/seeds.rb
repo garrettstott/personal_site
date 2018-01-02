@@ -70,3 +70,8 @@ if p.save
   puts 'profile saved'
   puts '*'*10
 end
+
+a = Admin.new
+a.email = 'garrettstott@gmail.com'
+a.password = 'password'
+a.save

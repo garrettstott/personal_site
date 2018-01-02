@@ -12,7 +12,6 @@ class RecentProjects extends React.Component {
   componentDidMount() {
     axios.get('v1/recent_projects')
       .then( data => {
-        console.log(data);
         this.setState({ projects: data.data })
       })
       .catch( error => {

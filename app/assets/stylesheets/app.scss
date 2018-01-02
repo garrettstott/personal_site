@@ -220,13 +220,39 @@ FOOTER
   display: flex;
   justify-content: space-between;
   * {
+    color: $Black;
     margin: auto 0;
   }
   i {
     padding-left: 8px;
-    color: $Black
   }
   i:hover {
     color: $Main;
   }
+}
+
+/***************************************************
+DEVISE
+***************************************************/
+
+.devise-container {
+  width: 500px;
+  margin: 0 auto;
+  input {
+    width: 100%;
+    background: none;
+    outline: none;
+    border: 1px solid $Main;
+    margin: 8px 0;
+    height: 24px;
+    line-height: 24px;
+  }
+}
+
+/***************************************************
+NO MATCH
+***************************************************/
+
+.no-match-container {
+  text-align: center;
 }

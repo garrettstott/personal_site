@@ -12,7 +12,6 @@ class AboutPreview extends React.Component {
   componentDidMount() {
     axios.get('/v1/bio_preview')
       .then( data => {
-        console.log(data);
         this.setState({
           bio: data.data
         })
