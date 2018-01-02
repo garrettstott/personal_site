@@ -23,12 +23,12 @@ CUSTOM
 ***************************************************/
 
 a {
-  color: $Main;
+  color: $Black;
   text-decoration: none;
 }
 
 a:hover {
-  color: lighten($Main, 5%);
+  color: $Main;
 }
 
 .wrapper {
@@ -137,6 +137,9 @@ LANDING
   * {
     margin: 0 auto;
   }
+  h1 {
+    font-size: 3em;
+  }
   .info-bar {
     border-radius: 5px;
     font-size: 1.5em;
@@ -151,7 +154,7 @@ LANDING
   }
   .personal-info {
     h1 {
-      font-size: 3em;
+      font-size: 4em;
       text-align: center;
       margin-bottom: 16px;
     }
@@ -220,7 +223,6 @@ FOOTER
   display: flex;
   justify-content: space-between;
   * {
-    color: $Black;
     margin: auto 0;
   }
   i {

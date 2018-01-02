@@ -3,7 +3,7 @@ class Project < ApplicationRecord
   belongs_to :experience
 
   def image_path
-    ActionController::Base.helpers.image_path("#{self.name.gsub(' ', '_')}")
+    # ActionController::Base.helpers.image_path("#{self.name.gsub(' ', '_')}")
   end
 
   def as_json(options=nil)
