@@ -7,68 +7,184 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-projects = [
-  'Personal Project 1',
-  'Personal Project 2',
-  'Personal Project 3',
-  'Personal Project 4',
-  'Personal Project 5',
-  'Personal Project 6',
+projects =
+  [
+    {
+      name: 'Personal Site',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'personal',
+      live_url: 'https://www.garrettstott.com/',
+      github_url: 'https://github.com/garrettstott/personal_site',
+      experience_id: 1,
+    },
+    {
+      name: 'Saas Project Manager',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'personal',
+      live_url: 'https://aegrescovitaesaas.herokuapp.com/',
+      github_url: 'https://github.com/garrettstott/saas-project',
+      experience_id: 1,
+    },
+    { name: 'Stock Tracker',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'personal',
+      live_url: 'https://aegrescovitaestocktracker.herokuapp.com',
+      github_url: 'https://github.com/garrettstott/finance-tracker',
+      experience_id: 1,
+    },
+    {
+      name: 'Blecher',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'personal',
+      live_url: 'https://belcher.herokuapp.com/',
+      github_url: 'https://github.com/justinewalt/belcher',
+      experience_id: 1,
+    },
+    {
+      name: 'A|V Recipes',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'personal',
+      live_url: 'https://aegrescovitaerecipes.herokuapp.com/',
+      github_url: 'https://github.com/garrettstott/myRecipes',
+      experience_id: 1,
+    },
+    {
+      name: 'Photo App',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'personal',
+      live_url: 'https://aegrescovitaephotoapp.herokuapp.com/',
+      github_url: 'https://github.com/garrettstott/photo_app',
+      experience_id: 1,
+    },
 
-  'Professional Project 1',
-  'Professional Project 2',
-  'Professional Project 3',
-  'Professional Project 4',
-  'Professional Project 5',
-  'Professional Project 6',
-]
+    {
+      name: 'Performance Auto',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'professional',
+      live_url: 'https://www.performanceut.com/',
+      github_url: nil,
+      experience_id: 1,
+    },
+    {
+      name: 'DevPoint Labs',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'professional',
+      live_url: 'http://devpointlabs.com/',
+      github_url: nil,
+      experience_id: 1,
+    },
+    {
+      name: 'Yes! Fitness Music',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'professional',
+      live_url: 'http://www.yesfitnessmusic.com/',
+      github_url: nil,
+      experience_id: 1,
+    },
+    {
+      name: 'Unleash The Beats',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'professional',
+      live_url: 'http://www.unleashthebeats.com/',
+      github_url: nil,
+      experience_id: 1,
+    },
+    {
+      name: 'Clementune',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'professional',
+      live_url: 'http://clementune.yesfitnessmusic.com/',
+      github_url: nil,
+      experience_id: 1,
+    },
+    {
+      name: 'Yes!Go',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'professional',
+      live_url: 'https://www.getyesgo.com/',
+      github_url: nil,
+      experience_id: 1,
+    },
+    {
+      name: 'Jillian Michaels',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'professional',
+      live_url: 'https://www.jillianmichaels.com/',
+      github_url: nil,
+      experience_id: 1,
+    },
+    {
+      name: 'Jillian Michaels API',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'professional',
+      live_url: 'https://www.jillianmichaels.com/app',
+      github_url: nil,
+      experience_id: 1,
+    }
+  ]
 
-experiences = [
-  'personal',
-  'lolo',
-  'High West Digital Architects',
-  'DevPoint Labs',
-]
+experiences =
+  [
+    {
+      company: 'personal',
+      location: 'Salt Lake City, UT',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+    },
+    { company: 'lolo',
+      location: 'Salt Lake City, UT',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+    },
+    {
+      company: 'High West Digital Architects',
+      location: 'Salt Lake City, UT',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+    },
+    {
+      company: 'DevPoint Labs',
+      location: 'Salt Lake City, UT',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+    }
+  ]
 
 experiences.each do |e|
+  e = OpenStruct.new(e)
   experience = Experience.new
-  experience.company = e
-  experience.location = 'Salt Lake City, UT'
-  experience.description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat. Cras a rhoncus nisi, in ultrices justo. Maecenas maximus augue rhoncus leo auctor, eget tincidunt dui pharetra. Nulla volutpat a urna at feugiat. Nunc luctus egestas metus eget pretium. Nunc ante turpis, suscipit ut diam sed, consequat consectetur ligula. Donec accumsan, enim id luctus finibus, odio.'
+  experience.company = e.company
+  experience.location = e.location
+  experience.description = e.description
   if experience.save
-    puts '*'*10
-    puts "#{e} saved"
-    puts '*'*10
+    puts experience.company
   else
     puts experience.errors.full_messages.to_sentence
   end
 end
 
+
 projects.each do |p|
+  p = OpenStruct.new(p)
   project = Project.new
-  project.name = p
-  project.live_url = 'https://www.google.com'
-  project.github_url = 'https://www.github.com'
-  project.project_type = p.split(' ').first.downcase
-  project.experience_id = 1
+  project.name = p.name
+  project.description = p.description
+  project.project_type = p.project_type
+  project.live_url = p.live_url
+  project.github_url = p.github_url
+  project.experience_id = p.experience_id
   if project.save
-    puts '*'*10
-    puts "#{p} saved"
-    puts '*'*10
+    puts "#{ project.name } saved"
   else
     puts project.errors.full_messages.to_sentence
   end
 end
 
-p = Profile.new
-p.bio = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat. Cras a rhoncus nisi, in ultrices justo. Maecenas maximus augue rhoncus leo auctor, eget tincidunt dui pharetra. Nulla volutpat a urna at feugiat. Nunc luctus egestas metus eget pretium. Nunc ante turpis, suscipit ut diam sed, consequat consectetur ligula. Donec accumsan, enim id luctus finibus, odio.'
-if p.save
-  puts '*'*10
-  puts 'profile saved'
-  puts '*'*10
-end
+p = Profile.create(
+ bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat. Cras a rhoncus nisi, in ultrices justo. Maecenas maximus augue rhoncus leo auctor, eget tincidunt dui pharetra. Nulla volutpat a urna at feugiat. Nunc luctus egestas metus eget pretium. Nunc ante turpis, suscipit ut diam sed, consequat consectetur ligula. Donec accumsan, enim id luctus finibus, odio.'
+)
 
-a = Admin.new
-a.email = 'garrettstott@gmail.com'
-a.password = 'password'
-a.save
+puts p.id ? 'Profile saved' : 'Profile not saved'
+
+a = Admin.create(
+  email: 'garrettstott@gmail.com',
+  password:'password'
+)
+
+puts a.id ? 'Admin saved' : 'Admin not saved'
