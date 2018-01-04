@@ -44,6 +44,7 @@ class Projects extends React.Component {
         <div className='project' key={ project.id }>
           <div className='project-image' style={{ backgroundImage: `${ project.image_path }` }}>&nbsp;</div>
           <h2>{ project.name }</h2>
+          <p>{ project.description }</p>
           <div className='links'>
             { live }
             { github }

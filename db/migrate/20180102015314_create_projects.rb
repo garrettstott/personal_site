@@ -2,11 +2,12 @@ class CreateProjects < ActiveRecord::Migration[5.1]
   def change
     create_table :projects do |t|
 
-      t.string :name
-      t.string :live_url
-      t.string :github_url
-      t.string :project_type
-      t.text   :description
+      t.string  :name
+      t.string  :live_url
+      t.string  :github_url
+      t.string  :project_type
+      t.text    :description
+      t.integer :rank
 
       t.references :experience, foreign_key: true
 

@@ -2,6 +2,8 @@ class Project < ApplicationRecord
 
   belongs_to :experience
 
+  default_scope { order('rank asc') }
+
   def image_path
     # ActionController::Base.helpers.image_path("#{self.name.gsub(' ', '_')}")
   end

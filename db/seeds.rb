@@ -16,6 +16,7 @@ projects =
       live_url: 'https://www.garrettstott.com/',
       github_url: 'https://github.com/garrettstott/personal_site',
       experience_id: 1,
+      rank: 1,
     },
     {
       name: 'Saas Project Manager',
@@ -24,6 +25,7 @@ projects =
       live_url: 'https://aegrescovitaesaas.herokuapp.com/',
       github_url: 'https://github.com/garrettstott/saas-project',
       experience_id: 1,
+      rank: 2,
     },
     { name: 'Stock Tracker',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
@@ -31,6 +33,7 @@ projects =
       live_url: 'https://aegrescovitaestocktracker.herokuapp.com',
       github_url: 'https://github.com/garrettstott/finance-tracker',
       experience_id: 1,
+      rank: 2,
     },
     {
       name: 'Blecher',
@@ -39,14 +42,16 @@ projects =
       live_url: 'https://belcher.herokuapp.com/',
       github_url: 'https://github.com/justinewalt/belcher',
       experience_id: 1,
+      rank: 2,
     },
     {
-      name: 'A|V Recipes',
+      name: 'Recipes App',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
       project_type: 'personal',
       live_url: 'https://aegrescovitaerecipes.herokuapp.com/',
       github_url: 'https://github.com/garrettstott/myRecipes',
       experience_id: 1,
+      rank: 3,
     },
     {
       name: 'Photo App',
@@ -55,8 +60,69 @@ projects =
       live_url: 'https://aegrescovitaephotoapp.herokuapp.com/',
       github_url: 'https://github.com/garrettstott/photo_app',
       experience_id: 1,
+      rank: 4,
     },
 
+
+
+
+
+
+
+    {
+      name: 'Yes! Fitness Music',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'professional',
+      live_url: 'http://www.yesfitnessmusic.com/',
+      github_url: nil,
+      experience_id: 1,
+      rank: 2,
+    },
+    {
+      name: 'Unleash The Beats',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'professional',
+      live_url: 'http://www.unleashthebeats.com/',
+      github_url: nil,
+      experience_id: 1,
+      rank: 3,
+    },
+    {
+      name: 'Clementune',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'professional',
+      live_url: 'http://clementune.yesfitnessmusic.com/',
+      github_url: nil,
+      experience_id: 1,
+      rank: 4,
+    },
+    {
+      name: 'Yes!Go',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'professional',
+      live_url: 'https://www.getyesgo.com/',
+      github_url: nil,
+      experience_id: 1,
+      rank: 2,
+    },
+    {
+      name: 'Jillian Michaels',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'professional',
+      live_url: 'https://www.jillianmichaels.com/',
+      github_url: nil,
+      experience_id: 1,
+      rank: 1,
+    },
+    {
+      name: 'Jillian Michaels API',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
+      project_type: 'professional',
+      live_url: 'https://www.jillianmichaels.com/app',
+      github_url: nil,
+      experience_id: 1,
+      rank: 1,
+    },
     {
       name: 'Performance Auto',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
@@ -73,54 +139,6 @@ projects =
       github_url: nil,
       experience_id: 1,
     },
-    {
-      name: 'Yes! Fitness Music',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
-      project_type: 'professional',
-      live_url: 'http://www.yesfitnessmusic.com/',
-      github_url: nil,
-      experience_id: 1,
-    },
-    {
-      name: 'Unleash The Beats',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
-      project_type: 'professional',
-      live_url: 'http://www.unleashthebeats.com/',
-      github_url: nil,
-      experience_id: 1,
-    },
-    {
-      name: 'Clementune',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
-      project_type: 'professional',
-      live_url: 'http://clementune.yesfitnessmusic.com/',
-      github_url: nil,
-      experience_id: 1,
-    },
-    {
-      name: 'Yes!Go',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
-      project_type: 'professional',
-      live_url: 'https://www.getyesgo.com/',
-      github_url: nil,
-      experience_id: 1,
-    },
-    {
-      name: 'Jillian Michaels',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
-      project_type: 'professional',
-      live_url: 'https://www.jillianmichaels.com/',
-      github_url: nil,
-      experience_id: 1,
-    },
-    {
-      name: 'Jillian Michaels API',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat.',
-      project_type: 'professional',
-      live_url: 'https://www.jillianmichaels.com/app',
-      github_url: nil,
-      experience_id: 1,
-    }
   ]
 
 experiences =
@@ -169,6 +187,7 @@ projects.each do |p|
   project.live_url = p.live_url
   project.github_url = p.github_url
   project.experience_id = p.experience_id
+  project.rank = p.rank
   if project.save
     puts "#{ project.name } saved"
   else
