@@ -12,7 +12,7 @@ class Landing extends React.Component {
       <div className='container landing-container'>
         <div id='personal-image'>&nbsp;</div>
         <div className='info-bar'>
-          something <i>//</i> something
+          Software Developer<b>||</b>Something Something
         </div>
         <div className='personal-info landing-section-container'>
           <h1>Garrett Stott</h1>

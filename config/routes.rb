@@ -18,6 +18,7 @@ Rails.application.routes.draw do
     get '/recent_projects', to: 'projects#recent_projects'
     get '/bio_preview', to: 'profile#bio_preview'
     get '/admin', to: 'admin#index'
+    get '/projects', to: 'projects#all_projects'
 
   end
   # REACT ROUTER

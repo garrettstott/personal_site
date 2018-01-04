@@ -6,7 +6,6 @@ class CreateProjects < ActiveRecord::Migration[5.1]
       t.string :live_url
       t.string :github_url
       t.string :project_type
-      t.text   :description
 
       t.references :experience, foreign_key: true
 

@@ -14,15 +14,13 @@ projects = [
   'Personal Project 4',
   'Personal Project 5',
   'Personal Project 6',
-  'Personal Project 7',
-  'Personal Project 8',
-  'Personal Project 9',
 
   'Professional Project 1',
   'Professional Project 2',
   'Professional Project 3',
   'Professional Project 4',
   'Professional Project 5',
+  'Professional Project 6',
 ]
 
 experiences = [
@@ -52,7 +50,6 @@ projects.each do |p|
   project.live_url = 'https://www.google.com'
   project.github_url = 'https://www.github.com'
   project.project_type = p.split(' ').first.downcase
-  project.description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat. Cras a rhoncus nisi, in ultrices justo. Maecenas maximus augue rhoncus leo auctor, eget tincidunt dui pharetra. Nulla volutpat a urna at feugiat. Nunc luctus egestas metus eget pretium. Nunc ante turpis, suscipit ut diam sed, consequat consectetur ligula. Donec accumsan, enim id luctus finibus, odio.'
   project.experience_id = 1
   if project.save
     puts '*'*10

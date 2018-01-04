@@ -25,9 +25,7 @@ class RecentProjects extends React.Component {
         <div className='recent-project-container' key={ project.id }>
           <div className='recent-project-image' style={{ backgroundImage: `url(${ project.image_path }` }}>&nbsp;</div>
           <h2>{ project.name }</h2>
-          <p>{ project.description }</p>
-          <div className='links-container'>
-            <h3>Visit</h3>
+          <div className='links'>
             <a href={ project.live_url } target='_blank'><i className='fa fa-globe'>&nbsp;</i></a>
             <a href={ project.github_url } target='_blank'><i className='fa fa-github'>&nbsp;</i></a>
           </div>
@@ -35,10 +33,12 @@ class RecentProjects extends React.Component {
       )
     });
     return(
-      <div className='container recent-projects-container'>
-        <h1 className='no-margin-bottom'><a href='/projects'><i className='fa fa-lightbulb-o'>&nbsp;</i>Projects</a></h1>
+      <div className='container projects'>
+        <h1><a href='/projects'><i className='fa fa-lightbulb-o'>&nbsp;</i>Projects</a></h1>
         <p><i>Recent Projects</i></p>
-        { projects }
+        <div className='recent-projects-container'>
+          { projects }
+        </div>
       </div>
     )
   }

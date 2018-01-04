@@ -4,4 +4,11 @@ class V1::ProjectsController < ApplicationController
     render json: Project.order(created_at: 'desc').limit(3)
   end
 
+  def all_projects
+    projects = Project.all
+    personal = projects.where(project_type: 'personal')
+    professional = projects.where(project_type: 'professional')
+    render json: { personal: personal, professional: professional }
+  end
+
 end

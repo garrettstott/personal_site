@@ -51,7 +51,6 @@ ActiveRecord::Schema.define(version: 20180102031643) do
     t.string "live_url"
     t.string "github_url"
     t.string "project_type"
-    t.text "description"
     t.bigint "experience_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

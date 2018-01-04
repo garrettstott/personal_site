@@ -37,8 +37,13 @@ a:hover {
   color: $Main;
 }
 
+.page-header {
+  text-align: center;
+  font-size: 3em;
+}
+
 .wrapper {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto 64px auto;
   min-height: 100vh;
 }
@@ -61,7 +66,7 @@ hr {
 
 hr.hr-fancy {
   border-top: 32px solid $Main;
-  width: 504px;
+  width: 100%;
   border-radius: 5px;
   margin: 32px auto;
 }
@@ -128,6 +133,7 @@ NAVBAR
   .home-link-container {
     display: inline-block;
     .home-link {
+      padding-left: 8px;
       display: flex;
     }
   }
@@ -140,9 +146,8 @@ LANDING
 .landing-container {
   display: flex;
   flex-direction: column;
-  * {
-    margin: 0 auto;
-  }
+  width: 800px;
+  margin: 0 auto;
   h1 {
     font-size: 3em;
   }
@@ -151,12 +156,14 @@ LANDING
     font-size: 1.5em;
     font-weight: 500;
     color: $White;
-    margin-top: -16px;
     text-align: center;
     padding: 16px 32px;
     background: $Main;
-    width: 540px;
-    margin-bottom: 32px;
+    width: 844px;
+    margin: -16px 0 0 -52px;
+    b {
+      padding: 0 16px;
+    }
   }
   .personal-info {
     h1 {
@@ -165,12 +172,14 @@ LANDING
       margin-bottom: 16px;
     }
     p {
+      text-align: justify;
       font-size: 1.2em;
     }
   }
 }
 
 #personal-image {
+  margin: 0 auto;
   height: 400px;
   width: 400px;
   background-image: url(asset_path('default'));
@@ -178,43 +187,85 @@ LANDING
 }
 
 .landing-section-container {
-  margin: 0 auto;
-  max-width: 504px;
-  min-width: 504px;
   h1 {
     margin-bottom: 32px;
   }
 }
 
-.recent-projects-container {
-  p {
-    margin-top: 8px;
+.projects {
+  h1 {
+    margin-bottom: 32px;
   }
-  .recent-project-image {
-    height: 200px;
-    width: 200px;
-    background-size: contain;
+  .recent-projects-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    .recent-project-image {
+      height: 250px;
+      width: 250px;
+      background-size: contain;
+      background: $Black;
+    }
+    .recent-project-container {
+      width: 250px;
+      border: 1px solid $Grey;
+      text-align: center;
+      h2 {
+        margin-top: 4px;
+      }
+      i {
+        font-size: 2em;
+      }
+      .links {
+        padding-bottom: 8px;
+        a {
+          padding-bottom: 8px;
+          i {
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+  }
+
+  .about-preview-container {
+    h1 {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+/***************************************************
+PROJECTS
+***************************************************/
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .project {
     border: 1px solid $Grey;
-    margin: 0;
-  }
-  .recent-project-container {
-    border-bottom: 1px solid $Grey;
-    margin-top: 32px;
+    width: 250px;
+    text-align: center;
+    margin-bottom: 16px;
     h2 {
-      margin: 8px 0;
+      margin-top: 4px;
     }
-    i {
-      font-size: 2em;
+    .links {
+      padding-bottom: 8px;
+      a {
+        padding: 4px;
+        i {
+          font-size: 1.5em;
+        }
+      }
     }
-    .links-container {
-      margin: 16px 0;
+    .project-image {
+      height: 250px;
+      width: 250px;
+      background-size: contain;
+      background: $Black;
     }
-  }
-}
-
-.about-preview-container {
-  h1 {
-    margin-bottom: 32px;
   }
 }
 
