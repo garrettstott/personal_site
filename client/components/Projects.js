@@ -25,9 +25,6 @@ class Projects extends React.Component {
 
   render() {
     let personal = this.state.personal.map( (project, i) => {
-      if ( i === 0 ) {
-        console.log(project);
-      }
       let live, github;
       if ( project.live_url ) {
         live = <a href={ project.live_url } target='_blank' title={ `${ project.name }'s Website` }><i className='fa fa-globe'>&nbsp;</i></a>
@@ -54,9 +51,6 @@ class Projects extends React.Component {
     });
 
     let professional = this.state.professional.map( (project, i) => {
-      if ( i === 0 ) {
-        console.log(project);
-      }
       let live, github;
       if ( project.live_url ) {
         live = <a href={ project.live_url } target='_blank' title={ `${ project.name }'s Website` }><i className='fa fa-globe'>&nbsp;</i></a>

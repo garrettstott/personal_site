@@ -27,13 +27,14 @@ class Admin extends React.Component {
     if ( this.state.admin !== null) {
       if ( this.state.admin.id ) {
         return(
-          <div>
+          <div className='wrapper'>
             <AdminNav />
             { this.props.children }
           </div>
         )
       } else {
-        window.location.href = '/admin/sign_in'
+        // can't use browserHistory, this route is not in react
+        window.location('/admin/sign_in');
         return(
           <div></div>
         )

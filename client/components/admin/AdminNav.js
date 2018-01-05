@@ -19,8 +19,10 @@ class AdminNav extends React.Component {
 
   render() {
     return(
-      <div>
-        AdminNav
+      <div className='admin-navbar'>
+        <a onClick={ () => browserHistory.push('/admin/projects') }>Projects</a>
+        <a onClick={ () => browserHistory.push('/admin/experiences') }>Experience</a>
+        <a onClick={ () => browserHistory.push('/admin/profile') }>Profile</a>
         <a onClick={ this.logout }>Logout</a>
       </div>
     )

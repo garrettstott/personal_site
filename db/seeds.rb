@@ -130,6 +130,7 @@ projects =
       live_url: 'https://www.performanceut.com/',
       github_url: nil,
       experience_id: 1,
+      rank: 5,
     },
     {
       name: 'DevPoint Labs',
@@ -137,7 +138,7 @@ projects =
       project_type: 'professional',
       live_url: 'http://devpointlabs.com/',
       github_url: nil,
-      experience_id: 1,
+      experience_id: 5,
     },
   ]
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { browserHistory } from 'react-router';
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -29,19 +30,19 @@ class NavBar extends React.Component {
       <div className='navbar-menu hidden'>
         <ul>
           <li>
-            <a href='/projects'>
+            <a onClick={ () => browserHistory.push('/projects') }>
               <i className='fa fa-lightbulb-o'>&nbsp;</i>
               <span>Projects</span>
             </a>
           </li>
           <li>
-            <a href='/about'>
+            <a onClick={ () => browserHistory.push('/about') }>
               <i className='fa fa-id-card-o'>&nbsp;</i>
               <span>About</span>
             </a>
           </li>
           <li>
-            <a href='/resume'>
+            <a onClick={ () => browserHistory.push('/resume') }>
               <i className='fa fa-file-text-o'>&nbsp;</i>
               <span>Resume</span>
             </a>
@@ -57,7 +58,7 @@ class NavBar extends React.Component {
       }
     return(
       <div className='navbar'>
-        <a href='/' className='home-link-container'>
+        <a onClick={ () => browserHistory.push('/') } className='home-link-container'>
           <div className='home-link'><i className='fa fa-glide-g'>&nbsp;</i></div>
         </a>
         <div className='hamburger-container' onClick={ this.toggleMenu }>

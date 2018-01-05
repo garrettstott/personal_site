@@ -17,8 +17,21 @@ Rails.application.routes.draw do
     # GET
     get '/recent_projects', to: 'projects#recent_projects'
     get '/bio_preview', to: 'profile#bio_preview'
-    get '/admin', to: 'admin#index'
     get '/projects', to: 'projects#all_projects'
+
+    # ADMIN
+    get '/admin', to: 'admin#index'
+    get '/admin/projects', to: 'admin#projects'
+    get '/admin/project/:id', to: 'admin#project'
+    get '/admin/experiences', to: 'admin#experiences'
+    get '/admin/experience/:id', to: 'admin#experience'
+    get '/admin/profile', to: 'admin#profile'
+
+    post '/admin/project/:id', to: 'admin#update_project'
+    post '/admin/project/:id/delete', to: 'admin#delete_project'
+    post '/admin/experience/:id', to: 'admin#update_experience'
+    post '/admin/experience/:id/delete', to: 'admin#delete_experience'
+    post '/admin/profile/:id', to: 'admin#update_profile'
 
   end
   # REACT ROUTER
