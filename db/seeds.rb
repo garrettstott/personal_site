@@ -138,7 +138,8 @@ projects =
       project_type: 'professional',
       live_url: 'http://devpointlabs.com/',
       github_url: nil,
-      experience_id: 5,
+      experience_id: 1,
+      rank: 6,
     },
   ]
 
