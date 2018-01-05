@@ -8,7 +8,7 @@ class Resume extends React.Component {
   render() {
     return(
       <div>
-        <h1>Resume</h1>
+        <h1 className='page-header'>Resume</h1>
       </div>
     )
   }

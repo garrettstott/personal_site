@@ -8,7 +8,7 @@ class About extends React.Component {
   render() {
     return(
       <div>
-        <h1>About</h1>
+        <h1 className='page-header'>About</h1>
         <div>
           <a href='https://www.github.com/garrettstott' target='_blank'>
             <i className='fa fa-github'>&nbsp;</i>

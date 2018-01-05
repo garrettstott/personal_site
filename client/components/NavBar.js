@@ -30,6 +30,12 @@ class NavBar extends React.Component {
       <div className='navbar-menu hidden'>
         <ul>
           <li>
+            <a onClick={ () => browserHistory.push('/') }>
+              <i className='fa fa-globe'>&nbsp;</i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
             <a onClick={ () => browserHistory.push('/projects') }>
               <i className='fa fa-lightbulb-o'>&nbsp;</i>
               <span>Projects</span>
