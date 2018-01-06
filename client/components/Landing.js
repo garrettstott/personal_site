@@ -47,6 +47,8 @@ class Landing extends React.Component {
           <p>Download my resume</p>
         </div>
 
+        <hr className='hr-fancy'/>
+
       </div>
     )
   }
