@@ -8,6 +8,7 @@ class Project < ApplicationRecord
   default_scope { order('rank asc') }
 
   def image_path
+    Rails.logger.info(ActionController::Base.helpers.image_path("#{self.name.downcase.gsub(' ', '_')}"))
     ActionController::Base.helpers.image_path("#{self.name.downcase.gsub(' ', '_')}")
   rescue
     Rails.logger.info("Can't find image #{self.name.downcase}")
