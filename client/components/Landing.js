@@ -44,7 +44,7 @@ class Landing extends React.Component {
               Resume
             </a>
           </h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra erat feugiat enim condimentum, vitae pellentesque dui consequat. Cras a rhoncus nisi, in ultrices justo. Maecenas maximus augue rhoncus leo auctor, eget tincidunt dui pharetra. Nulla volutpat a urna at feugiat. Nunc luctus egestas metus eget pretium. Nunc ante turpis, suscipit ut diam sed, consequat consectetur ligula. Donec accumsan, enim id luctus finibus, odio.</p>
+          <p>Download my resume</p>
         </div>
 
       </div>
