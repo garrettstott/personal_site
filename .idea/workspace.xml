@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59d08a15-44f3-4dcb-b638-49db0d7461a1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/puma.rb" afterPath="$PROJECT_DIR$/config/puma.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -74,8 +74,8 @@
       <file leaf-file-name="puma.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/puma.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="513">
+              <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -556,12 +556,12 @@
       <workItem from="1515126601335" duration="1470000" />
       <workItem from="1515128788580" duration="12791000" />
       <workItem from="1515187245851" duration="13619000" />
-      <workItem from="1515209793350" duration="1407000" />
+      <workItem from="1515209793350" duration="1668000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62038000" />
+    <option name="totallyTimeSpent" value="62299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="22" width="1920" height="1058" extended-state="0" />
@@ -956,8 +956,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/puma.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="513">
+          <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
           <folding />
         </state>
       </provider>
