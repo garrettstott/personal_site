@@ -12,13 +12,13 @@ class AdminExperiences extends React.Component {
 
   componentDidMount() {
     axios.get('/v1/admin/experiences')
-      .then( data => {
+      .then( response => {
         this.setState({
-          experiences: data.data
+          experiences: response.data
         })
       })
       .catch( error => {
-        console.log(data);
+        console.log(error);
       })
   }
 

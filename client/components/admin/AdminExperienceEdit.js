@@ -13,9 +13,9 @@ class AdminProjectEdit extends React.Component {
 
   componentDidMount() {
     axios.get(`/v1/admin/experience/${ this.props.params.id }`)
-      .then( data => {
+      .then( response => {
         this.setState({
-          experience: data.data
+          experience: response.data
         })
       })
       .catch( error => {
@@ -32,12 +32,12 @@ class AdminProjectEdit extends React.Component {
         experience: this.state.experience
       }
     })
-      .then( data => {
-        if ( data.data.success ) {
+      .then( response => {
+        if ( response.data.success ) {
           browserHistory.push(`/admin/experiences/${ this.props.params.id }`);
           toastr.success('Saved')
         } else {
-          toastr.error(data.data.message);
+          toastr.error(response.data.message);
         }
       })
       .catch( error => {

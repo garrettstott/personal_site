@@ -13,9 +13,9 @@ class AdminProfileEdit extends React.Component {
 
   componentDidMount() {
     axios.get('/v1/admin/profile')
-      .then( data => {
+      .then( response => {
         this.setState({
-          profile: data.data
+          profile: response.data
         })
       })
       .catch( error => {
@@ -32,12 +32,12 @@ class AdminProfileEdit extends React.Component {
         profile: this.state.profile
       }
     })
-      .then( data => {
-        if ( data.data.success ) {
+      .then( response => {
+        if ( response.data.success ) {
           browserHistory.push('/admin/profile');
           toastr.success('Saved')
         } else {
-          toastr.error(data.data.message);
+          toastr.error(response.data.message);
         }
       })
       .catch( error => {

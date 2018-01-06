@@ -14,18 +14,18 @@ class AdminProjectEdit extends React.Component {
 
   componentDidMount() {
     axios.get(`/v1/admin/project/${ this.props.params.id }`)
-      .then( data => {
+      .then( response => {
         this.setState({
-          project: data.data
+          project: response.data
         })
       })
       .catch( error => {
         console.log(error);
       });
     axios.get('/v1/admin/experiences')
-      .then( data => {
+      .then( response => {
         this.setState({
-          experiences: data.data
+          experiences: response.data
         })
       })
       .catch( error => {
@@ -42,12 +42,12 @@ class AdminProjectEdit extends React.Component {
         project: this.state.project
       }
     })
-      .then( data => {
-        if ( data.data.success ) {
+      .then( response => {
+        if ( response.data.success ) {
           browserHistory.push(`/admin/projects/${ this.props.params.id }`);
           toastr.success('Saved')
         } else {
-          toastr.error(data.data.message);
+          toastr.error(response.data.message);
         }
       })
       .catch( error => {

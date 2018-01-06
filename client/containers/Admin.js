@@ -34,7 +34,7 @@ class Admin extends React.Component {
         )
       } else {
         // can't use browserHistory, this route is not in react
-        window.location('/admin/sign_in');
+        window.location = '/admin/sign_in';
         return(
           <div></div>
         )

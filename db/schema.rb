@@ -36,6 +36,8 @@ ActiveRecord::Schema.define(version: 20180102031643) do
     t.string "company"
     t.string "location"
     t.string "description"
+    t.text "job_title"
+    t.string "dates"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

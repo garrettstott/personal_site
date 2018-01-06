@@ -18,6 +18,8 @@ Rails.application.routes.draw do
     get '/recent_projects', to: 'projects#recent_projects'
     get '/bio_preview', to: 'profile#bio_preview'
     get '/projects', to: 'projects#all_projects'
+    get '/about', to: 'profile#about'
+    get '/experiences', to: 'experiences#all_experiences'
 
     # ADMIN
     get '/admin', to: 'admin#index'

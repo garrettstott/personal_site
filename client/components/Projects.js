@@ -12,10 +12,10 @@ class Projects extends React.Component {
 
   componentDidMount() {
     axios.get('/v1/projects')
-      .then( data => {
+      .then( response => {
         this.setState({
-          personal: data.data.personal,
-          professional: data.data.professional,
+          personal: response.data.personal,
+          professional: response.data.professional,
         })
       })
       .catch( error => {
@@ -25,6 +25,7 @@ class Projects extends React.Component {
 
   render() {
     let personal = this.state.personal.map( (project, i) => {
+      console.log(project.image_path)
       let live, github;
       if ( project.live_url ) {
         live = <a href={ project.live_url } target='_blank' title={ `${ project.name }'s Website` }><i className='fa fa-globe'>&nbsp;</i></a>
@@ -39,9 +40,8 @@ class Projects extends React.Component {
       }
       return(
         <div className='project' key={ project.id }>
-          <div className='project-image' style={{ backgroundImage: `${ project.image_path }` }}>&nbsp;</div>
+          <div className='project-image' style={{ backgroundImage: `url(${ project.image_path })` }}>&nbsp;</div>
           <h2>{ project.name }</h2>
-          <p>{ project.description }</p>
           <div className='links'>
             { live }
             { github }
@@ -51,6 +51,7 @@ class Projects extends React.Component {
     });
 
     let professional = this.state.professional.map( (project, i) => {
+      console.log(project.image_path)
       let live, github;
       if ( project.live_url ) {
         live = <a href={ project.live_url } target='_blank' title={ `${ project.name }'s Website` }><i className='fa fa-globe'>&nbsp;</i></a>
@@ -65,9 +66,8 @@ class Projects extends React.Component {
       }
       return(
         <div className='project' key={ project.id }>
-          <div className='project-image' style={{ backgroundImage: `${ project.image_path }` }}>&nbsp;</div>
+          <div className='project-image' style={{ backgroundImage: `url(${ project.image_path })` }}>&nbsp;</div>
           <h2>{ project.name }</h2>
-          <p>{ project.description }</p>
           <div className='links'>
             { live }
             { github }

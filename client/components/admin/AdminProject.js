@@ -12,9 +12,9 @@ class AdminProject extends React.Component {
 
   componentDidMount() {
     axios.get(`/v1/admin/project/${ this.props.params.id }`)
-      .then( data => {
+      .then( response => {
         this.setState({
-          project: data.data
+          project: response.data
         })
       })
       .catch( error => {
@@ -28,8 +28,8 @@ class AdminProject extends React.Component {
         url: `/v1/admin/project/${ this.state.project.id }/delete`,
         method: 'post'
       })
-        .then( data => {
-          if ( data.data.success ) {
+        .then( response => {
+          if ( response.data.success ) {
             browserHistory.push('/admin/projects');
             toastr.success('Deleted');
           } else {

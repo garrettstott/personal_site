@@ -13,9 +13,9 @@ class AdminExperience extends React.Component {
 
   componentDidMount() {
     axios.get(`/v1/admin/experience/${ this.props.params.id }`)
-      .then( data => {
+      .then( response => {
         this.setState({
-          experience: data.data
+          experience: response.data
         })
       })
       .catch( error => {
@@ -29,12 +29,12 @@ class AdminExperience extends React.Component {
         url: `/v1/admin/experience/${ this.state.experience.id }/delete`,
         method: 'post'
       })
-        .then( data => {
-          if ( data.data.success ) {
+        .then( response => {
+          if ( response.data.success ) {
             browserHistory.push('/admin/experiences');
             toastr.success('Deleted');
           } else {
-            toastr.error(data.data.message);
+            toastr.error(response.data.message);
           }
         })
         .catch( error => {

@@ -12,19 +12,13 @@ class Landing extends React.Component {
       <div className='container landing-container'>
         <div id='personal-image'>&nbsp;</div>
         <div className='info-bar'>
-          Software Developer<b>||</b>Something Something
+          Software Developer
         </div>
         <div className='personal-info landing-section-container'>
           <h1>Garrett Stott</h1>
           <p>
-            Some personal info Some personal info
-            Some personal info Some personal info
-            Some personal info Some personal info
-            Some personal info Some personal info
-            Some personal info Some personal info
-            Some personal info Some personal info
-            Some personal info Some personal info
-            Some personal info Some personal info
+            Experienced Software Engineer with a demonstrated history of working in the computer software industry.
+            Skilled in AWS, Rails, Ruby, JavaScript, and React. Strong engineering professional graduated from DevPoint Labs.
           </p>
         </div>
 

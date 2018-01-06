@@ -11,8 +11,8 @@ class RecentProjects extends React.Component {
 
   componentDidMount() {
     axios.get('v1/recent_projects')
-      .then( data => {
-        this.setState({ projects: data.data })
+      .then( response => {
+        this.setState({ projects: response.data })
       })
       .catch( error => {
         console.log(error);
@@ -37,7 +37,6 @@ class RecentProjects extends React.Component {
         <div className='recent-project-container' key={ project.id }>
           <div className='recent-project-image' style={{ backgroundImage: `url(${ project.image_path }` }}>&nbsp;</div>
           <h2>{ project.name }</h2>
-          <p>{ project.description }</p>
           <div className='links'>
             { live }
             { github }

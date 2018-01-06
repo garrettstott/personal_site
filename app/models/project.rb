@@ -2,13 +2,15 @@ class Project < ApplicationRecord
 
   belongs_to :experience
 
-  validates_presence_of :name, :description, :experience_id, :live_url,
+  validates_presence_of :name, :experience_id, :live_url,
                         :rank, :project_type
 
   default_scope { order('rank asc') }
 
   def image_path
-    # ActionController::Base.helpers.image_path("#{self.name.gsub(' ', '_')}")
+    ActionController::Base.helpers.image_path("#{self.name.downcase.gsub(' ', '_')}")
+  rescue
+    Rails.logger.info("Can't find image #{self.name.downcase}")
   end
 
   def as_json(options=nil)

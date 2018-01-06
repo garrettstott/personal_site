@@ -12,9 +12,9 @@ class AdminProfile extends React.Component {
 
   componentDidMount() {
     axios.get('/v1/admin/profile')
-      .then( data => {
+      .then( response => {
         this.setState({
-          profile: data.data
+          profile: response.data
         })
       })
       .catch( error => {
@@ -23,10 +23,11 @@ class AdminProfile extends React.Component {
   }
 
   render() {
+    let bio = { __html: this.state.profile.bio };
     return(
       <div>
         <h1>Profile</h1>
-        <p>{ this.state.profile.bio }</p>
+        <div dangerouslySetInnerHTML={ bio }></div>
         <button onClick={ () => browserHistory.push('/admin/profile/edit') }>
           Edit
         </button>

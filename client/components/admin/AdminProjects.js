@@ -13,10 +13,10 @@ class AdminProjects extends React.Component {
 
   componentDidMount() {
     axios.get('/v1/admin/projects')
-      .then( data => {
+      .then( response => {
         this.setState({
-          personal: data.data.personal,
-          professional: data.data.professional
+          personal: response.data.personal,
+          professional: response.data.professional
         })
       })
       .catch( error => {

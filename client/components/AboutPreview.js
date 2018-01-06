@@ -11,9 +11,9 @@ class AboutPreview extends React.Component {
 
   componentDidMount() {
     axios.get('/v1/bio_preview')
-      .then( data => {
+      .then( response => {
         this.setState({
-          bio: data.data
+          bio: response.data
         })
       })
       .catch( error => {
@@ -22,14 +22,13 @@ class AboutPreview extends React.Component {
   }
 
   render() {
+    let bio = { __html: `${ this.state.bio }... <a href='/about'>read more</a>` };
     return(
       <div className='about-preview-container'>
         <h1>
           <a href='/about'><i className='fa fa-id-card-o'>&nbsp;</i>About</a>
         </h1>
-        <p>{ this.state.bio }...
-          <a href='/about'>read more</a>
-        </p>
+        <p dangerouslySetInnerHTML={ bio }></p>
       </div>
     )
   }

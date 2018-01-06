@@ -14,6 +14,7 @@ $Main: #C06B69;
 $Black: #444444;
 $White: #F7F7F7;
 $Grey: lighten($Black, 50%);
+$BreakPoint: 850px;
 
 /***************************************************
 BODY HTML
@@ -25,13 +26,23 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /***************************************************
 CUSTOM
 ***************************************************/
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 a {
+  cursor: pointer;
   color: $Black;
-  text-decoration: none;
+  //text-decoration: none;
+  //border-bottom: 1px solid $Black;
 }
 
 a:hover {
@@ -53,8 +64,8 @@ b {
   min-height: 100vh;
 }
 
-.container {
-
+.center {
+  text-align: center;
 }
 
 .hidden {
@@ -71,7 +82,7 @@ hr {
 
 hr.hr-fancy {
   border-top: 32px solid $Main;
-  width: 100%;
+  width: 99%;
   border-radius: 5px;
   margin: 32px auto;
 }
@@ -159,6 +170,7 @@ NAVBAR
     position: relative;
     text-align: right;
     .navbar-menu {
+      width: 200px;
       background: $Main;
       text-align: left;
       position: absolute;
@@ -176,6 +188,7 @@ NAVBAR
           padding-top: 32px;
           flex: 1;
           margin: auto 0;
+          width: 100%;
           a {
             color: $White;
             i {
@@ -207,6 +220,9 @@ LANDING
 ***************************************************/
 
 .landing-container {
+  @media ( max-width: $BreakPoint ) {
+    width: 100vw;
+  }
   display: flex;
   flex-direction: column;
   width: 800px;
@@ -223,9 +239,10 @@ LANDING
     padding: 16px 32px;
     background: $Main;
     width: 844px;
-    margin: -16px 0 0 -52px;
+    margin: -32px 0 0 -22px;
     b {
       padding: 0 16px;
+      font-style: italic;
     }
   }
   .personal-info {
@@ -264,10 +281,11 @@ LANDING
     justify-content: space-between;
     margin-bottom: 32px;
     .recent-project-image {
-      height: 250px;
-      width: 250px;
+      height: 249px;
+      width: 249px;
+      border-bottom: 1px solid $Grey;
       background-size: contain;
-      background: $Black;
+      background-repeat: no-repeat;
     }
     .recent-project-container {
       width: 250px;
@@ -281,7 +299,7 @@ LANDING
       }
       p {
         text-align: left;
-        padding: 0 4px;
+        padding: 0 8px;
       }
       .links {
         padding-bottom: 8px;
@@ -320,7 +338,7 @@ PROJECTS
     }
     p {
       text-align: left;
-      padding: 0 4px;
+      padding: 0 8px;
     }
     .links {
       padding-bottom: 8px;
@@ -329,32 +347,12 @@ PROJECTS
       }
     }
     .project-image {
-      height: 250px;
-      width: 250px;
+      height: 248px;
+      width: 248px;
       background-size: contain;
-      background: $Black;
+      background-repeat: no-repeat;
+      border-bottom: 1px solid $Grey;
     }
-  }
-}
-
-/***************************************************
-FOOTER
-***************************************************/
-
-.footer {
-  margin: 0 auto;
-  max-width: 700px;
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  * {
-    margin: auto 0;
-  }
-  i {
-    padding-left: 8px;
-  }
-  i:hover {
-    color: $Main;
   }
 }
 
@@ -395,6 +393,53 @@ ADMIN
 }
 
 /***************************************************
+ABOUT
+***************************************************/
+
+.about-container {
+  .links {
+    text-align: center;
+  }
+  .experiences {
+    span {
+      padding-right: 8px;
+    }
+    div {
+      border-bottom: 1px solid $Grey;
+    }
+  }
+}
+
+/***************************************************
+RESUME
+***************************************************/
+
+.resume-container {
+  .downloads-container {
+    margin-bottom: 32px;
+    a {
+      padding: 0 8px;
+    }
+  }
+  .resume {
+    margin: 0 auto;
+    height: 1028px;
+    width: 792px;
+    display: block;
+  }
+  .resume-1 {
+    background: url(asset_path('resume-1'));
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .resume-2 {
+    background: url(asset_path('resume-2'));
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+/***************************************************
 DEVISE
 ***************************************************/
 
@@ -404,9 +449,88 @@ DEVISE
 }
 
 /***************************************************
+FOOTER
+***************************************************/
+
+.footer {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  a {
+    text-decoration: none;
+  }
+  * {
+    margin: auto 0;
+  }
+  i {
+    padding-left: 8px;
+  }
+  i:hover {
+    color: $Main;
+  }
+}
+
+/***************************************************
 NO MATCH
 ***************************************************/
 
 .no-match-container {
   text-align: center;
+}
+
+/***************************************************
+MEDIA QUERIES
+***************************************************/
+
+@media ( max-width: $BreakPoint ) {
+  .container {
+    padding: 0 4px;
+  }
+  .landing-container {
+    .info-bar {
+      border-radius: 5px;
+      font-weight: 500;
+      color: $White;
+      text-align: center;
+      padding: 16px 0;
+      background: $Main;
+      width: 100%;
+      margin: -32px 0 0 0;
+      font-size: 1em;
+      b {
+        padding: 0 16px;
+      }
+    }
+    #personal-image {
+      height: calc(100vw - 16px);
+      width: calc(100vw - 16px);
+      max-width: 400px;
+      max-height: 400px;
+    }
+    .personal-info {
+      h1 {
+        font-size: 3em;
+      }
+    }
+  }
+  .projects {
+    .recent-projects-container {
+      flex-direction: column;
+      .recent-project-container {
+        margin: 0 auto 16px auto;
+      }
+    }
+  }
+  .projects-container {
+    .project {
+      margin: 0 auto 16px auto;
+    }
+  }
+  .resume-container {
+    .resume {
+      display: none;
+    }
+  }
 }
