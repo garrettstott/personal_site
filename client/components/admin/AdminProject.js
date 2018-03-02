@@ -57,7 +57,7 @@ class AdminProject extends React.Component {
           <p>
             <b>Experience</b>
             <br/>
-            { project.experience_id || '-' }
+            { project.experience_company || '-' }
           </p>
           <p>
             <b>Live URL</b>
