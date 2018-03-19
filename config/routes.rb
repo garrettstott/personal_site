@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   root 'app#home'
 
-  get '/.well-known/.well-known/pki-validation/07EAFF373C560DCCD308D97D705FFF13.txt'
+  get '/.well-known/pki-validation/07EAFF373C560DCCD308D97D705FFF13.txt', to: redirect('/.well-known/pki-validation/07EAFF373C560DCCD308D97D705FFF13.txt')
 
   devise_for :admin, controllers: {
     sessions: 'admin/sessions',
