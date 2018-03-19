@@ -3,8 +3,6 @@ Rails.application.routes.draw do
 
   root 'app#home'
 
-  get '/.well-known/acme-challenge/:id' => 'app#letsencrypt'
-
   devise_for :admin, controllers: {
     sessions: 'admin/sessions',
     registrations: 'admin/registrations'
