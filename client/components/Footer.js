@@ -4,7 +4,7 @@ let year = new Date().getFullYear();
 const Footer = () => (
   <div className='footer'>
     <div>
-      <p>&copy; <a href='/admin'>Garrett Stott</a> { year }</p>
+      <p>&copy; <a className='cursor-text' href='/admin'>Garrett Stott</a> { year }</p>
     </div>
     <div>
       <a href='https://www.github.com/garrettstott' target='_blank'>

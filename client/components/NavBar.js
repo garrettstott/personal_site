@@ -30,45 +30,38 @@ class NavBar extends React.Component {
       <div className='navbar-menu hidden'>
         <ul>
           <li>
-            <a onClick={ () => browserHistory.push('/') }>
-              <i className='fa fa-globe'>&nbsp;</i>
-              <span>Home</span>
-            </a>
+            <div onClick={ () => browserHistory.push('/') }>
+              <span className='icon-container'><i className='fa fa-globe'>&nbsp;</i></span>
+              <span className='name-container'>Home</span>
+            </div>
           </li>
           <li>
-            <a onClick={ () => browserHistory.push('/projects') }>
-              <i className='fa fa-lightbulb-o'>&nbsp;</i>
-              <span>Projects</span>
-            </a>
+            <div onClick={ () => browserHistory.push('/projects') }>
+              <span className='icon-container'><i className='fa fa-lightbulb-o'>&nbsp;</i></span>
+              <span className='name-container'>Projects</span>
+            </div>
           </li>
           <li>
-            <a onClick={ () => browserHistory.push('/about') }>
-              <i className='fa fa-id-card-o'>&nbsp;</i>
-              <span>About</span>
-            </a>
+            <div onClick={ () => browserHistory.push('/about') }>
+              <span className='icon-container'><i className='fa fa-id-card-o'>&nbsp;</i></span>
+              <span className='name-container'>About</span>
+            </div>
           </li>
           <li>
-            <a onClick={ () => browserHistory.push('/resume') }>
-              <i className='fa fa-file-text-o'>&nbsp;</i>
-              <span>Resume</span>
-            </a>
+            <div onClick={ () => browserHistory.push('/resume') }>
+              <span className='icon-container'><i className='fa fa-file-text-o'>&nbsp;</i></span>
+              <span className='name-container'>Resume</span>
+            </div>
           </li>
         </ul>
       </div>;
-
-      let menuIcon;
-      if ( this.state.showMenu ) {
-        menuIcon = <i className='fa fa-times'>&nbsp;</i>
-      } else {
-        menuIcon = <i className='fa fa-bars'>&nbsp;</i>
-      }
     return(
       <div className='navbar'>
         <a onClick={ () => browserHistory.push('/') } className='home-link-container'>
-          <div className='home-link'><i className='fa fa-glide-g'>&nbsp;</i></div>
+          <i className='fa fa-glide-g'>&nbsp;</i>
         </a>
-        <div className='hamburger-container' onClick={ this.toggleMenu }>
-          { menuIcon }
+        <div className='hamburger-container'>
+          <i className='hamburger-button fa fa-bars' onClick={ this.toggleMenu }>&nbsp;</i>
           { menu }
         </div>
       </div>

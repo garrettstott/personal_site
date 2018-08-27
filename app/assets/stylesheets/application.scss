@@ -64,6 +64,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
 }
 
+.cursor-text {
+  cursor: text;
+}
+
 .page-header {
   text-align: center;
   font-size: 3em;
@@ -181,7 +185,7 @@ NAVBAR
     position: relative;
     text-align: right;
     .navbar-menu {
-      width: 200px;
+      width: 216px;
       background: $Main;
       text-align: left;
       position: absolute;
@@ -194,24 +198,31 @@ NAVBAR
         list-style: none;
         li {
           cursor: pointer;
-          border-bottom: 1px solid $Grey;
           font-size: 1.5em;
           padding-top: 32px;
-          flex: 1;
           margin: auto 0;
           width: 100%;
-          a {
+          div {
+            display: flex;
             color: $White;
-            i {
-              font-size: 1em;
-              color: $White;
+            .icon-container {
+              flex: 1;
+              i {
+                font-size: 1em;
+                color: $White;
+              }
             }
-            span {
-              text-align: right;
+            .name-container {
+              flex: 2;
             }
           }
-          a:hover {
+          div:hover {
             color: #FFF;
+            .icon-container {
+              i {
+                color: #FFF;
+              }
+            }
           }
         }
       }
@@ -219,10 +230,7 @@ NAVBAR
   }
   .home-link-container {
     display: inline-block;
-    .home-link {
-      padding-left: 8px;
-      display: flex;
-    }
+    flex: 0;
   }
 }
 
