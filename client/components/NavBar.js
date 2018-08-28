@@ -25,30 +25,37 @@ class NavBar extends React.Component {
     })
   };
 
+  clickLink = (url) => {
+    browserHistory.push(url);
+    this.setState({
+      showMenu: false
+    })
+  };
+
   render() {
     let menu =
       <div className='navbar-menu hidden'>
         <ul>
           <li>
-            <div onClick={ () => browserHistory.push('/') }>
+            <div onClick={ () => this.clickLink('/') }>
               <span className='icon-container'><i className='fa fa-globe'>&nbsp;</i></span>
               <span className='name-container'>Home</span>
             </div>
           </li>
           <li>
-            <div onClick={ () => browserHistory.push('/projects') }>
+            <div onClick={ () => this.clickLink('/projects') }>
               <span className='icon-container'><i className='fa fa-lightbulb-o'>&nbsp;</i></span>
               <span className='name-container'>Projects</span>
             </div>
           </li>
           <li>
-            <div onClick={ () => browserHistory.push('/about') }>
+            <div onClick={ () => this.clickLink('/about') }>
               <span className='icon-container'><i className='fa fa-id-card-o'>&nbsp;</i></span>
               <span className='name-container'>About</span>
             </div>
           </li>
           <li>
-            <div onClick={ () => browserHistory.push('/resume') }>
+            <div onClick={ () => this.clickLink('/resume') }>
               <span className='icon-container'><i className='fa fa-file-text-o'>&nbsp;</i></span>
               <span className='name-container'>Resume</span>
             </div>
